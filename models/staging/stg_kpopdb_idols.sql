@@ -23,6 +23,8 @@ with
 
     ),
 
+    
+
     female_idols as (
         select 
             stage_name as idol_name,
@@ -39,6 +41,5 @@ with
         select * from male_idols
     
     )
-    
 
-select * from idols
+SELECT * from idols order by group_name

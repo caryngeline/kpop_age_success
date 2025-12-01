@@ -40,4 +40,4 @@ with
     
     )
 
-select * from kpop_groups
+select * from kpop_groups order by group_name
