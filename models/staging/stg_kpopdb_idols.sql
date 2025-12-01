@@ -15,7 +15,7 @@ with
 
     male_idols as (
         select 
-            full_name as idol_name,
+            stage_name as idol_name,
             CAST(birthdate as datetime) as birth_date,
             group_name,
         
@@ -25,7 +25,7 @@ with
 
     female_idols as (
         select 
-            full_name as idol_name,
+            stage_name as idol_name,
             CAST(birthdate as datetime) as birth_date,
             group_name,
         

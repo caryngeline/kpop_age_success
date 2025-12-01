@@ -1,0 +1,6 @@
+{
+    "dbt.dbtPath": "/home/caryngeline/projects/kpop_debut_age/venv/bin/dbt",
+    "dbt.integrationType": "fusion",
+    "python.defaultInterpreterPath": "/home/caryngeline/projects/kpop_debut_age/venv/bin/python.exe",
+    "emmet.preferences": {}
+}

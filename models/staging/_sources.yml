@@ -1,16 +1,23 @@
 sources:
   - name: kpop_db
+    database: kpop
+    schema: kpop_db
     tables: 
       - name: male_idols
-        config:
-          external_location: "seeds/raw_male_idols.csv"
+        # config:
+        #   external_location: "seeds/raw_male_idols.csv"
       - name: female_idols
-        config:
-          external_location: "seeds/raw_female_idols.csv"
+        # config:
+        #   external_location: "seeds/raw_female_idols.csv"
       - name: male_groups
-        config:
-          external_location: "seeds/raw_male_groups.csv"
+        # config:
+        #   external_location: "seeds/raw_male_groups.csv"
       - name: female_groups
-        config:
-          external_location: "seeds/raw_female_groups.csv"
+        # config:
+        #   external_location: "seeds/raw_female_groups.csv"
+  - name: soridata
+    database: kpop
+    schema: soridata
+    tables:
+      - name: achievements
       
