@@ -1,0 +1,16 @@
+sources:
+  - name: kpop_db
+    tables: 
+      - name: male_idols
+        config:
+          external_location: "seeds/raw_male_idols.csv"
+      - name: female_idols
+        config:
+          external_location: "seeds/raw_female_idols.csv"
+      - name: male_groups
+        config:
+          external_location: "seeds/raw_male_groups.csv"
+      - name: female_groups
+        config:
+          external_location: "seeds/raw_female_groups.csv"
+      
