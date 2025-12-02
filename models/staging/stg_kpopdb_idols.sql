@@ -1,37 +1,23 @@
 with 
-    source_male_idols as (
-            select *
-            
-            from {{ source('kpop_db', 'male_idols') }}
-
-    ),
-
-    source_female_idols as (
-            select *
-            
-            from {{ source('kpop_db', 'female_idols') }}
-
-    ),
-
     male_idols as (
         select 
             stage_name as idol_name,
             CAST(birthdate as datetime) as birth_date,
-            group_name,
+            UPPER(group_name) as group_name,
         
-        from source_male_idols
+        from {{ source('kpop_db', 'male_idols') }}
+        where group_name is not null
 
     ),
-
-    
 
     female_idols as (
         select 
             stage_name as idol_name,
             CAST(birthdate as datetime) as birth_date,
-            group_name,
+            UPPER(group_name) as group_name,
         
-        from source_female_idols
+        from {{ source('kpop_db', 'female_idols') }}
+        where group_name is not null
 
     ),
 
@@ -42,4 +28,4 @@ with
     
     )
 
-SELECT * from idols order by group_name
+SELECT * from idols order by group_name 

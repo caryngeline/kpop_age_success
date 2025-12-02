@@ -1,10 +1,12 @@
 with 
-
     source as (
         select 
             id as group_id,
-            name as group_name,
+            CASE 
+                when name = 'FROMIS 9' then 'FROMIS_9'
+                else UPPER(name) end as group_name,
             debut_date,
+            disband_date,
             sales_circle as physical_sales,
             views as music_video_views,
             circle_streaming_score as streaming_score,

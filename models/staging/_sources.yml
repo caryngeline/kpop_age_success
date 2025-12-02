@@ -4,20 +4,33 @@ sources:
     schema: kpop_db
     tables: 
       - name: male_idols
-        # config:
-        #   external_location: "seeds/raw_male_idols.csv"
+        description: List of male idol names with their group and age.
       - name: female_idols
-        # config:
-        #   external_location: "seeds/raw_female_idols.csv"
+        description: List of female idol names with their group and age.
       - name: male_groups
-        # config:
-        #   external_location: "seeds/raw_male_groups.csv"
+        description: List of male boy bands with their group information.
+        columns:
+          - name: group_name
+            data_tests:
+              - unique
+              - not_null
       - name: female_groups
-        # config:
-        #   external_location: "seeds/raw_female_groups.csv"
+        description: List of male boy bands with their group information.
+        columns:
+          - name: group_name
+            data_tests:
+              - unique
+              - not_null
   - name: soridata
     database: kpop
     schema: soridata
     tables:
       - name: achievements
+        description: List of KPOP groups with their achievements.
+        columns:
+          - name: id
+            data_tests:
+              - not_null
+              - unique
+
       

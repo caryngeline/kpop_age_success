@@ -1,20 +1,8 @@
 with 
-
-    idols as (
-
-        select *
-        from {{ ref('stg_kpopdb_idols') }}
-    ),
-
-    groups as (
-        select * 
-        from {{ ref('stg_kpopdb_groups') }}
-    ),
-
     joined as (
         select * 
-        from idols 
-        INNER JOIN groups using (group_name)
+        from {{ ref('stg_kpopdb_idols') }} 
+        RIGHT JOIN {{ ref('stg_kpopdb_groups') }} using (group_name)
         ORDER by group_name
     ),
 
@@ -27,15 +15,15 @@ with
 
     aggregated as (
         select 
-            case when group_name = '2:00 PM' then '2PM'
-            else group_name end as group_name,
+            group_name,
             debut_date,
-            AVG(debut_age) as average_debut_age
+            AVG(debut_age) as average_debut_age,
+            active
         
         from get_age_during_debut
-        group by group_name, debut_date
+        group by group_name, debut_date, active
         
     )
 
-select * from aggregated
+select * from aggregated order by average_debut_age
 
