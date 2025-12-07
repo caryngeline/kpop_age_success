@@ -18,23 +18,11 @@ The goal is to uncover generational trends and correlations between debut timing
 
 ---
 
-## 📂 Project Structure
-- `analyses/` → Exploratory SQL queries and reports
-- `macros/` → Custom dbt macros
-- `models/` → Core dbt models (staging, intermediate, marts)
-- `seeds/` → Static reference data (e.g., group metadata)
-- `snapshots/` → Historical snapshots for tracking changes
-- `tests/` → Data quality checks
-- `requirements.txt` → Python dependencies
-- `dbt_project.yml` → dbt project configuration
-
----
-
 ## 📊 Key Findings
 The data collected included members of Kpop groups average ages during debut from teenage years to early twenties. Majority of the average debut age is around 17-20.
 
-Most of the successfull groups are in so called 3rd generation of Kpop.
-These groups' average debut age are also around 17-20. 
+Most of the successfull groups are in the so called **3rd generation** of Kpop.
+These groups' average debut age are also around **17-20**. 
 
 From this, the success and the members' average age during debut cannot be correlated, since groups from other generations also had the same average debut date but were not as successful.
 
