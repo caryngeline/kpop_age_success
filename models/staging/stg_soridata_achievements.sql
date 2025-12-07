@@ -4,6 +4,7 @@ with
             id as group_id,
             CASE 
                 when name = 'FROMIS 9' then 'FROMIS_9'
+                when name = 'TVXQ!' then 'TVXQ'
                 else UPPER(name) end as group_name,
             debut_date,
             disband_date,
