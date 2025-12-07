@@ -40,8 +40,8 @@ From this, the success and the members' average age during debut cannot be corre
 
 [Open K-Pop Age & Success Report](https://lookerstudio.google.com/reporting/1ab5a344-2cd8-49c8-b76f-74893bed829b)
 
-![K-Pop Age & Success Dashboard](assets/kpop_debut_age_correlation.png)
-
+![K-Pop Age & Success Histogram](assets/kpop_age_success_histogram.png)
+![K-Pop Age & Success Dashboard](assets/kpop_age_success_correlation.png)
 
 ---
 
