@@ -38,7 +38,10 @@ These groups' average debut age are also around 17-20.
 
 From this, the success and the members' average age during debut cannot be correlated, since groups from other generations also had the same average debut date but were not as successful.
 
-![Alt text](https://lookerstudio.google.com/embed/reporting/1ab5a344-2cd8-49c8-b76f-74893bed829b/page/p_mkuxipbtyd, "Dashboard")
+[Open K-Pop Age & Success Report](https://lookerstudio.google.com/reporting/1ab5a344-2cd8-49c8-b76f-74893bed829b)
+
+![K-Pop Age & Success Dashboard](assets/kpop_debut_age_correlation.png)
+
 
 ---
 
