@@ -1,4 +1,4 @@
-Stage Name,Full Name,Date of Birth,Group,Country
+stage_name,full_name,birth_date,group_name,country
 Zuho,Bae Juho,1996-07-04,SF9,South Korea
 Ziu,Park Heejun,1997-06-16,VAV,South Korea
 Zico,Woo Jiho,1992-09-14,Block B,South Korea
@@ -357,7 +357,7 @@ P-Goon,Park Sehyuk,1991-10-18,,South Korea
 Onew,Lee Jinki,1989-12-14,SHINee,South Korea
 Onejunn,Jo Wonjun,1988-11-22,Boys Republic,South Korea
 On,Choi Juhwan,2002-10-16,T1419,South Korea
-On,Kim Dongwoo,-0001-11-30,ABLUE,South Korea
+On,Kim Dongwoo,1996-11-04,ABLUE,South Korea
 O.V,Kim Sanchan,1999-01-03,D-CRUNCH,South Korea
 O.de,Oh Seungmin,2002-06-11,Xdinary Heroes,South Korea
 Nohyul,Lee Nohyul,2004-06-18,CMDM,South Korea

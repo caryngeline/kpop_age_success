@@ -1,4 +1,4 @@
-Name,Debut,Company,Active
+group_name,debut_date,company,active
 (G)I-DLE,2018-05-02,Cube,Yes
 15&,2012-10-05,JYP,No
 2EYES,2013-07-20,SidusHQ,No
@@ -110,7 +110,7 @@ Highteen,2016-10-14,Elijah,No
 Hinapia,2019-11-03,Alseulbit,No
 Hint,2017-03-31,Starpro,Yes
 Honey Popcorn,2018-03-21,Kyun Create,No
-I'LL-IT,-0001-11-30,Be:lift,Yes
+I'LL-IT,2024-03-25,Be:lift,Yes
 I.C.E,2015-11-16,HS,Yes
 ICHILLIN',2021-09-08,KM,Yes
 ICU,2019-10-22,Liz,Yes
