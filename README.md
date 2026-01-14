@@ -14,6 +14,7 @@ The goal is to uncover generational trends and correlations between debut timing
 ## 🛠 Tech Stack
 - **dbt (Data Build Tool):** For data modeling, transformations, and testing.
 - **Snowflake:** Cloud data warehouse storing cleaned and aggregated datasets.
+- **PostgreSQL:** Data warehouse storing cleaned and aggregated datasets.
 - **Looker Studio:** Visualization layer for charts (scatter, line, heatmap, radar).
 
 ---
