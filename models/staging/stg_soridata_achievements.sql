@@ -17,7 +17,7 @@ with
             paks
 
         from {{ source('soridata', 'achievements') }}
-        where disband_date is null and act like 'group' and debut_date is not null and physical_sales <> 0
+        where disband_date is null and act like 'group' and debut_date is not null and sales_circle <> 0
     )
 
 select * from source

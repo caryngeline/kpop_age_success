@@ -8,7 +8,8 @@ with
 
     get_age_during_debut as (
         select *,
-            DATEDIFF(YEAR, birth_date, debut_date) - CASE WHEN (MONTH(birth_date) > MONTH(debut_date)) OR (MONTH(birth_date) = MONTH(debut_date) AND DAY(birth_date) > DAY(debut_date)) THEN 1 ELSE 0 END AS debut_age,
+            AGE(debut_date, birth_date) AS debut_age
+            --DATEDIFF(YEAR, birth_date, debut_date) - CASE WHEN (MONTH(birth_date) > MONTH(debut_date)) OR (MONTH(birth_date) = MONTH(debut_date) AND DAY(birth_date) > DAY(debut_date)) THEN 1 ELSE 0 END AS debut_age
         from joined
         order by debut_age desc
     ),

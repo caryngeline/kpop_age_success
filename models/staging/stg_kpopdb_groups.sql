@@ -4,8 +4,9 @@ with
             CASE 
                 when group_name = '2:00 PM' then '2PM'
                 else UPPER(group_name) end as group_name,
-            CAST(debutdate AS datetime) as debut_date,
-            active,
+            CAST(debutdate AS date) as debut_date,
+            --CAST(debutdate AS datetime) as debut_date,
+            active
         
         from {{ source('kpop_db', 'male_groups') }}
         where active = 'Yes'
@@ -19,10 +20,11 @@ with
                 when group_name = '(G)I-DLE' then 'I-DLE'
                 else UPPER(group_name) end as group_name,
             CASE
-                when debutdate = '2002-06-20' then CAST('2022-06-20' AS datetime)
-                when debutdate = '-0001-11-30' then CAST('2024-03-25' AS datetime)
-                else CAST(debutdate AS datetime) end as debut_date,
-            active,
+                when debutdate = '2002-06-20' then CAST('2022-06-20' AS date)
+                --when debutdate = '-0001-11-30' then CAST('2024-03-25' AS date)
+                else CAST(debutdate AS date) end as debut_date,
+                --else CAST(debutdate AS datetime) end as debut_date,
+            active
         
         from {{ source('kpop_db', 'female_groups') }}
         where active = 'Yes'

@@ -23,7 +23,7 @@ sources:
               - not_null
   - name: soridata
     database: kpop
-    schema: soridata
+    schema: kpop_db
     tables:
       - name: achievements
         description: List of KPOP groups with their achievements.
